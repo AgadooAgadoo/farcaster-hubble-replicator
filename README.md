@@ -162,6 +162,39 @@ Same commands are available for the replicator as well (e.g. within the /replica
 
 **IMPORTANT** - if you run the upgrade command on either the hubble or the replicator, there is a chance the docker-compose edits you made above pay be overwritten (or out of date). If any major changes take place, I will try to update this doc here (though suggest also checking the [/hubs](https://warpcast.com/~/channel/hubs) or [/fc-devs](https://warpcast.com/~/channel/fc-devs) channels).
 
+### Useful Links
+
+In all of these, SERVER_IP refers to the external ip address of your server (e.g. 12.34.56.78)
+
+To view your hubble stats dashboard (see [Farcaster docs for more info](https://docs.farcaster.xyz/hubble/monitoring):
+
+```
+SERVER_IP:3000
+```
+
+To view your replicator queue/logs:
+
+```
+SERVER_IP:9000
+```
+
+To use the httpapi (see [Farcaster docs for more info](https://docs.farcaster.xyz/reference/hubble/httpapi/httpapi):
+
+```
+SERVER_IP:2281
+```
+e.g. to find all casts by a specific fid (in this case 123)
+
+```
+SERVER_IP:2281/v1/castsByFid?fid=123
+```
+
+To use the grpcapi (see [Farcaster docs for more info](https://docs.farcaster.xyz/reference/hubble/grpcapi/grpcapi):
+
+```
+SERVER_IP:2283
+```
+
 ### Default Info
 
 In case it is of use, the default setups of hubble/replicator will result in the following:
