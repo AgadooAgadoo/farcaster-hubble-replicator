@@ -95,16 +95,14 @@ If you see any data at all, this means the replicator is working correctly.
 
 Remembering the command to start postgres is a pain (and you need to be in the /replicator folder for it to work). Here's how to add a custom command to handle this.
 
-1. In the following code, MYCOMMAND is the command you want to use (can be anything as long as it is one word/string with no spaces). FOLDER_LOCATION is the location of your replicator installation.
-   Once you have these, in your server console type:
+1. In the following code, MYCOMMAND is the command you want to use (can be anything as long as it is one word/string with no spaces). FOLDER_LOCATION is the location of your replicator installation. In your server console:
 
 ```
 echo "alias MYCOMMAND='cd /FOLDER_LOCATION/replicator && sudo docker compose exec postgres psql -U replicator replicator'" >> ~/.bashrc
 ```
-
-```
 e.g. for me, it might be
 
+```
 echo "alias hubble-db='cd /home/agadoo/replicator && sudo docker compose exec postgres psql -U replicator replicator'" >> ~/.bashrc
 ```
 
