@@ -149,13 +149,19 @@ In case it is of use, the default setups of hubble/replicator will result in the
 #### Hubble
 
 Network in docker-compose: my-network
+
 Docker network: hubble_my-network (docker auto-adds the process name as a prefix)
+
 Docker image: farcasterxyz/hubble:latest
+
 Docker container name: hubble-hubble-1
 
 #### Replicator
 
 Network in docker-compose: replicator-network
+
 Docker network: replicator_replicator-network (docker auto-adds the process name as a prefix)
+
 Docker image: farcasterxyz/replicator:latest
+
 Docker container name: replicator-replicator-1
