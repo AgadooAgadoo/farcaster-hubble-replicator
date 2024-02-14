@@ -18,7 +18,7 @@ The reason for this - the hubble and replicator are installed in different docke
 
 1. Install the [hubble](https://docs.farcaster.xyz/hubble/install) and [replicator](https://docs.farcaster.xyz/developers/guides/apps/replicate) as per the Farcaster documentation.
 2. During the replicator setup, when asked for 'HUB_HOST' you can use the server's external IP with port 2283.
-   (\_e.g. 12.34.56.78:2283*)
+   (*e.g. 12.34.56.78:2283*)
 
 This solves the issue of different docker containers/networks by going via the network stack (i.e. effectively going out to the internet and back again). Whilst this should work, it loses the benefits of running things locally (most notably increased latency).
 
