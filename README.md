@@ -44,11 +44,15 @@ This solves the issue of different docker containers/networks by going via the n
 
 1. Install the [hubble](https://docs.farcaster.xyz/hubble/install) and [replicator](https://docs.farcaster.xyz/developers/guides/apps/replicate) as per the Farcaster documentation.
 
-2. During the replicator setup, when asked for 'HUB_HOST', enter
+2. During the replicator setup, when asked for 'HUB_HOST', enter the following (depending on the version of docker compose you have, this will either be with underscores or dashes)
 ```
+# EITHER:
 hubble-hubble-1:2283
+# OR:  
+hubble_hubble_1:2283
 ```
- (hubble-hubble-1 is the docker container set up when installing hubble).
+
+ (i.e. the docker container name of the hubble with port 2283 ).
 
 3. You will eventually see a red error message (something like 'ERROR - Unhandled promise rejection: Error: Unable to communicate with hubble-hubble-1:2283 ) - when you see this, can ctrl+c to quit.
 
@@ -197,7 +201,7 @@ SERVER_IP:2283
 
 ### Default Info
 
-In case it is of use, the default setups of hubble/replicator will result in the following:
+In case it is of use, the default setups of hubble/replicator will result in the following (depending on your version of docker compose, these might be underscores instead of dashes):
 
 #### Hubble
 
