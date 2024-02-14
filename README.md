@@ -1,6 +1,6 @@
 # Farcaster Hubble/Replicator Install Guide
 
-Any problems, please ping me on Farcaster at [https://warpcast.com/agadoo](https://warpcast.com/agadoo)
+Any problems, please ping me on Farcaster at <a href="https://warpcast.com/agadoo" target="_blank">https://warpcast.com/agadoo</a>
 
 **WARNING** - This guide is purely for development purposes (no idea if suitable for production).
 
