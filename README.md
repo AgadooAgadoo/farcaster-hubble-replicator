@@ -51,7 +51,7 @@ networks:
 
 ```
 networks:
-    replicator-network:
+  replicator-network:
 ```
 
 and replace with
