@@ -142,7 +142,7 @@ Same commands are available for the replicator as well (e.g. within the /replica
 
 **IMPORTANT** - if you run the upgrade command on either the hubble or the replicator, there is a chance the docker-compose edits you made above pay be overwritten (or out of date). If any major changes take place, I will try to update this doc here (though suggest also checking the [/hubs](https://warpcast.com/~/channel/hubs) or [/fc-devs](https://warpcast.com/~/channel/fc-devs) channels).
 
-### Default INFO
+### Default Info
 
 In case it is of use, the default setups of hubble/replicator will result in the following:
 
