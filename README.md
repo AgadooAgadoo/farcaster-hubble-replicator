@@ -14,17 +14,17 @@ Installing hubble and replicator so they can work together locally is not trivia
 
 The reason for this - the hubble and replicator are installed in different docker containers (using different docker networks). This means that out of the box, they can't 'see' each other locally.
 
-### Install links (just to save time)
+### Install links
 
-Hubble (will install into /hubble from whichever folder you run this command)
+**Hubble** (will install into /hubble from whichever folder you run this command)
 ```
 curl -sSL https://download.farcaster.xyz/bootstrap-replicator.sh | bash
 ```
-Replicator (will install into /replicator from whichever folder you run this command)
+**Replicator** (will install into /replicator from whichever folder you run this command)
 ```
 curl -sSL https://download.farcaster.xyz/bootstrap-replicator.sh | bash
 ```
-Opening postgres once everything installed (from within /replicator folder)
+**Opening postgres** (from within /replicator folder after everything is installed)
 ```
 docker compose exec postgres psql -U replicator replicator
 ```
@@ -179,3 +179,5 @@ Docker network: replicator_replicator-network (docker auto-adds the process name
 Docker image: farcasterxyz/replicator:latest
 
 Docker container name: replicator-replicator-1
+
+That's all folks! Reminder, any issues just ping me on Farcaster at [https://warpcast.com/agadoo](https://warpcast.com/agadoo)
