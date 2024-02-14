@@ -14,7 +14,7 @@ Please see the [Farcaster documentation](https://docs.farcaster.xyz/hubble/insta
 
 **Hubble** (will install into /hubble from whichever folder you run this command)
 ```
-curl -sSL https://download.farcaster.xyz/bootstrap-replicator.sh | bash
+curl -sSL https://download.thehubble.xyz/bootstrap.sh | bash
 ```
 **Replicator** (will install into /replicator from whichever folder you run this command)
 ```
