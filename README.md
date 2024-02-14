@@ -120,13 +120,23 @@ source ~/.bashrc
 
 From within the /hubble install folder:
 
-Start hubble - ./hubble.sh up
+To start hubble:
+```
+./hubble.sh up
+```
+To stop hubble:
+```
+./hubble.sh down
+```
+View logs for hubble
+```
+./hubble.sh logs
+```
 
-Stop hubble - ./hubble.sh down
-
-View logs for hubble - ./hubble.sh logs
-
-Upgrade hubble - ./hubble.sh upgrade
+To upgrade hubble
+```
+./hubble.sh upgrade
+```
 
 Same commands are available for the replicator as well (e.g. within the /replicator folder, to view the logs it is ./replicator.sh logs etc)
 
