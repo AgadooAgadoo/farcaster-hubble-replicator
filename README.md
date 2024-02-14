@@ -44,7 +44,11 @@ This solves the issue of different docker containers/networks by going via the n
 
 1. Install the [hubble](https://docs.farcaster.xyz/hubble/install) and [replicator](https://docs.farcaster.xyz/developers/guides/apps/replicate) as per the Farcaster documentation.
 
-2. During the replicator setup, when asked for 'HUB_HOST', enter hubble_my-network:2283 (hubble_my-network is the default docker network set up when installing hubble).
+2. During the replicator setup, when asked for 'HUB_HOST', enter
+```
+hubble_my-network:2283
+```
+ (hubble_my-network is the default docker network set up when installing hubble).
 
 3. You will eventually see a red error message (something like 'ERROR - Unhandled promise rejection: Error: Unable to communicate with hubble_my-network:2283 ) - when you see this, can ctrl+c to quit.
 
@@ -88,7 +92,7 @@ networks:
 ./replicator.sh up
 ```
 
-10. This time there should be no similar 'ERROR - Unhandled promise rejection' message as above. Eventually log messages should start coming in  (e.g. 'INFO (7): Enqueuing jobs for backfilling FID registrations...'). This means it has worked! If you need to run other commands, you can run ctrl+c to quit, then restart the replicator without logging everything to the console
+9. This time there should be no similar 'ERROR - Unhandled promise rejection' message as above. Eventually log messages should start coming in  (e.g. 'INFO (7): Enqueuing jobs for backfilling FID registrations...'). This means it has worked! If you need to run other commands, you can run ctrl+c to quit, then restart the replicator without logging everything to the console
 
 ```
 ./replicator.sh up -d
