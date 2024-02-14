@@ -116,6 +116,19 @@ source ~/.bashrc
 
 3. You should now be able to just type MYCOMMAND (e.g. for me hubble-db) from anywhere and the postgres terminal should open
 
+### Useful commands
+
+From within the /hubble install folder:
+
+Start hubble - ./hubble.sh up
+Stop hubble - ./hubble.sh down
+View logs for hubble - ./hubble.sh logs
+Upgrade hubble - ./hubble.sh upgrade
+
+Same commands are available for the replicator as well (e.g. within the /replicator folder, to view the logs it is ./replicator.sh logs etc)
+
+**IMPORTANT** - if you run the upgrade command on either the hubble or the replicator, there is a chance the docker-compose edits you made above pay be overwritten (or out of date). If any major changes take place, I will try to update this doc here (though suggest also checking the [/hubs](https://warpcast.com/~/channel/hubs) or [/fc-devs](https://warpcast.com/~/channel/fc-devs) channels).
+
 ### Default INFO
 
 In case it is of use, the default setups of hubble/replicator will result in the following:
