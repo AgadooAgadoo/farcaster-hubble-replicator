@@ -16,6 +16,8 @@ The reason for this - the hubble and replicator are installed in different docke
 
 ### Install links
 
+Please see the [Farcaster documentation](https://docs.farcaster.xyz/hubble/install) for full details.
+
 **Hubble** (will install into /hubble from whichever folder you run this command)
 ```
 curl -sSL https://download.farcaster.xyz/bootstrap-replicator.sh | bash
