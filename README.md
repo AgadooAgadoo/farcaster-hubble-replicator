@@ -67,13 +67,13 @@ networks:
 
 8. Save this and restart the replicator by navigating to the /replicator folder and running
 ```
-docker compose up
+./replicator.sh up
 ```
 
 10. This time there should be no similar 'ERROR - Unhandled promise rejection' message as above. Eventually log messages should start coming in  (e.g. 'INFO (7): Enqueuing jobs for backfilling FID registrations...'). This means it has worked! If you need to run other commands, you can run ctrl+c to quit, then restart the replicator without logging everything to the console
 
 ```
-docker compose up -d
+./replicator.sh up -d
 ```
 
 10. To verify things are working, from within the /replicator folder you can open postgres using:
