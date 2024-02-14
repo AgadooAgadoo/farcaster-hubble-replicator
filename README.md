@@ -8,12 +8,6 @@ Any problems, please ping me on Farcaster at [https://warpcast.com/agadoo](https
 
 And fyi, am a complete docker/linux/shell script left curver, so please let me know what should be changed below :)
 
-### Issue
-
-Installing hubble and replicator so they can work together locally is not trivial (most likely due to issues with HUB_HOST and the error "Unhandled promise rejection: Error: Unable to communicate with xyz:2283).
-
-The reason for this - the hubble and replicator are installed in different docker containers (using different docker networks). This means that out of the box, they can't 'see' each other locally.
-
 ### Install links
 
 Please see the [Farcaster documentation](https://docs.farcaster.xyz/hubble/install) for full details.
@@ -30,6 +24,12 @@ curl -sSL https://download.farcaster.xyz/bootstrap-replicator.sh | bash
 ```
 docker compose exec postgres psql -U replicator replicator
 ```
+
+### Issue
+
+Installing hubble and replicator so they can work together locally is not trivial (most likely due to issues with HUB_HOST and the error "Unhandled promise rejection: Error: Unable to communicate with xyz:2283).
+
+The reason for this - the hubble and replicator are installed in different docker containers (using different docker networks). This means that out of the box, they can't 'see' each other locally.
 
 
 ### Solution 1 (external IP - works but not ideal)
