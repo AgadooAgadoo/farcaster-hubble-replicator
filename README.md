@@ -46,9 +46,9 @@ This solves the issue of different docker containers/networks by going via the n
 
 2. During the replicator setup, when asked for 'HUB_HOST', enter
 ```
-hubble_my-network:2283
+hubble-hubble-1:2283
 ```
- (hubble_my-network is the default docker network set up when installing hubble).
+ (hubble-hubble-1 is the docker container set up when installing hubble).
 
 3. You will eventually see a red error message (something like 'ERROR - Unhandled promise rejection: Error: Unable to communicate with hubble_my-network:2283 ) - when you see this, can ctrl+c to quit.
 
