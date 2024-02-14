@@ -43,8 +43,8 @@ and replace with
 
 ```
 networks:
-   - replicator-network
-   - hubble_my-network
+  - replicator-network
+  - hubble_my-network
 ```
 
 6. Around line 96, find
