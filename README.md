@@ -2,11 +2,11 @@
 
 Any problems, please ping me on Farcaster at [https://warpcast.com/agadoo](https://warpcast.com/agadoo)
 
-**_WARNING_** - This guide is purely for development purposes (no idea if suitable for production).
+**WARNING** - This guide is purely for development purposes (no idea if suitable for production).
 
 This method assumes you want to install hubble/replicator on a server (if using on a local machine/desktop/laptop, you may also need to look into port forwarding to get this to work with your router).
 
-**_Reminder_** - this is only relevant if you want to install the replicator (to save data into a postgres db). If you just want to install hubble, run a node and query things via the httpapi, you can ignore this guide (and follow the [Farcaster hubble install documention](https://docs.farcaster.xyz/hubble/install))
+**Reminder** - this is only relevant if you want to install the replicator (to save data into a postgres db). If you just want to install hubble, run a node and query things via the httpapi, you can ignore this guide (and follow the [Farcaster hubble install documention](https://docs.farcaster.xyz/hubble/install))
 
 And fyi, am a complete docker/linux/shell script left curver, so please let me know what should be changed below :)
 
