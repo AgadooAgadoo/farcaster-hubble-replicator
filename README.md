@@ -28,7 +28,7 @@ This solves the issue of different docker containers/networks by going via the n
 
 2. During the replicator setup, when asked for 'HUB_HOST', enter hubble_my-network:2283 (hubble_my-network is the default docker network set up when installing hubble).
 
-3. You will eventually see a log error (something like 'ERROR - Unhandled promise rejection: Error: Unable to communicate with xyz:2283 ) - when you see this, can ctrl+c to quit.
+3. You will eventually see a red error message (something like 'ERROR - Unhandled promise rejection: Error: Unable to communicate with hubble_my-network:2283 ) - when you see this, can ctrl+c to quit.
 
 4. Now open the replicator docker-compose file (depends on the install location e.g. nano /home/yourusername/replicator/docker-compose.yml). For those not familiar with docker-compose files - indentation and spaces matter. Anything indented underneath another line should be two spaces exactly.
 
