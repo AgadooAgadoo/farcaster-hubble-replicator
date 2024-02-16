@@ -50,7 +50,8 @@ This solves the issue of different docker containers/networks by going via the n
 hubble-hubble-1:2283
 # OR:  
 hubble_hubble_1:2283
-# run docker container ls if unsure, look for farcasterxyz/hubble:latest - the container name here will show one of the above with underscores/dashes
+# run docker container ls if unsure, look for farcasterxyz/hubble:latest
+# the container name here will show one of the above with underscores/dashes
 ```
 
  (i.e. the docker container name of the hubble with port 2283 ).
@@ -72,7 +73,8 @@ and replace with
 networks:
   - replicator-network
   - hubble_my-network
-# see above for comment about dashes/underscores. can run docker network ls to see networks - it might be hubble_my_network
+# see above for comment about dashes/underscores.
+# can run docker network ls to see networks - it might be hubble_my_network
 ```
 
 6. Around line 96, find
@@ -90,7 +92,8 @@ networks:
   hubble_my-network:
     external: true
 
-# see above about dashes/underscores. hubble_my-network here is the same as whatever you used in line 27 above
+# see above about dashes/underscores.
+# hubble_my-network here is the same as whatever you used in line 27 above
 ```
 
 7. By adding the default hubble network (hubble_my-network) to the replicator using 'external: true', it should connect to both it's own network (replicator_replicator-network) and the hubble's network. This allows them to start talking (and grab the data and populate our db).
